@@ -1,0 +1,10 @@
+# Eval workspace (large output files, not needed in repo)
+*-workspace/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/

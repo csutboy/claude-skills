@@ -1,0 +1,89 @@
+{
+  "skill_name": "bazi-ai-consultant",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "我想用AI帮我算八字，我是1990年3月15日早上8点出生的，男性，出生在上海。帮我把整个流程走一遍。",
+      "expected_output": "Walk the user through all 3 phases: Phase 1 generates the bazi chart prompt with 4 pillars, 起运 info, 大运 list; reminds user to cross-validate 起运年龄 with 3 websites; Phase 2 provides all 3 calibration round prompts (past events, current traits, relationship history) with feedback templates; Phase 3 provides the final prediction prompt. All prompts should be in Chinese and ready to copy.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "all_3_phases_present",
+          "description": "Response covers Phase 1 (排盘), Phase 2 calibration (校准), and Phase 3 prediction (预测)"
+        },
+        {
+          "name": "chinese_prompts_included",
+          "description": "Contains actual Chinese-language prompts in code blocks the user can copy into their AI conversation"
+        },
+        {
+          "name": "qiyun_crossvalidation_mentioned",
+          "description": "Explicitly mentions the need to cross-validate 起运年龄 with external bazi websites"
+        },
+        {
+          "name": "feedback_format_provided",
+          "description": "Includes ✓/✗ feedback template for the calibration rounds"
+        },
+        {
+          "name": "prediction_prompt_included",
+          "description": "Phase 3 prediction prompt covering future spouse, 10-year fortune, and key year nodes is present"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "帮我用DeepSeek算命，我女朋友1995年农历七月初七出生，下午3点，她想知道今年的运势和什么时候适合结婚。",
+      "expected_output": "Guide through the process noting the lunar date needs to be converted to solar first. Provide Phase 1 排盘 prompt. Emphasize cross-validating 起运年龄. Then provide the calibration phases before jumping to prediction. The final prediction prompt should include 感情运 and 婚姻时机 as key dimensions.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "lunar_to_solar_conversion_noted",
+          "description": "Mentions that the lunar date (农历) needs to be converted to solar (阳历) before proceeding"
+        },
+        {
+          "name": "all_3_phases_present",
+          "description": "Response covers Phase 1 (排盘), Phase 2 calibration (校准), and Phase 3 prediction (预测)"
+        },
+        {
+          "name": "chinese_prompts_included",
+          "description": "Contains actual Chinese-language prompts in code blocks the user can copy into their AI conversation"
+        },
+        {
+          "name": "qiyun_crossvalidation_mentioned",
+          "description": "Explicitly mentions the need to cross-validate 起运年龄 with external bazi websites"
+        },
+        {
+          "name": "feedback_format_provided",
+          "description": "Includes ✓/✗ feedback template for the calibration rounds"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to do a bazi reading for myself using AI. My birth info: March 15, 1988, 6:30 AM, female. I heard there's a method with feedback rounds that makes it more accurate — can you walk me through it?",
+      "expected_output": "Explain the 3-phase reinforcement learning approach. Provide Phase 1 chart setup prompt in Chinese. Remind to verify 起运年龄 with the 3 listed websites. Walk through all 3 calibration rounds with feedback format. End with the prediction prompt. Should adapt to English-speaking user while keeping the actual prompts in Chinese.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "all_3_phases_present",
+          "description": "Response covers Phase 1 (排盘), Phase 2 calibration (校准), and Phase 3 prediction (预测)"
+        },
+        {
+          "name": "chinese_prompts_included",
+          "description": "Contains actual Chinese-language prompts in code blocks the user can copy into their AI conversation"
+        },
+        {
+          "name": "qiyun_crossvalidation_mentioned",
+          "description": "Explicitly mentions the need to cross-validate 起运年龄 with external bazi websites"
+        },
+        {
+          "name": "feedback_format_provided",
+          "description": "Includes ✓/✗ feedback template for the calibration rounds"
+        },
+        {
+          "name": "feedback_loop_concept_explained",
+          "description": "Explains why the feedback loop works (reinforcement learning analogy or calibration concept) in English for this English-speaking user"
+        }
+      ]
+    }
+  ]
+}
